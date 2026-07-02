@@ -1,1 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <style>
+        /* --- ESTILOS GERAIS (CSS) --- */
+        :root {
+            --primary-color: #2c5e3b;
+            --secondary-color: #8fa883;
+            --accent-color: #e67e22;
+            --dark-color: #2c3e50;
+            --light-color: #f8f9fa;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* --- SEÇÃO INTRODUTÓRIA --- */
+        .intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        /* --- CARDS DE PILARES --- */
+        .grid-pilares {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Simulando imagens com placeholders temáticos via CSS */
+        .img-agronegocio {
+            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1592982537447-7440771109a2?auto=format&fit=crop&q=80&w=600');
+        }
+
+        .img-familiar {
+            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=600');
+        }
+
+        .img-sustentabilidade {
+            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&q=80&w=600');
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        /* --- SEÇÃO INTERATIVA INTERATIVA --- */
+        .interativo {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #d35400;
+        }
+
+        #mensagem-equilibrio {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-left: 4px solid var(--primary-color);
+            background: #eef5f0;
+            display: none;
+            text-align: left;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>O equilíbrio vital entre a alta produção e a preservação do meio ambiente</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="intro">
+            <h2>A Coexistência Necessária</h2>
+            <p>Garantir a segurança alimentar do planeta e, ao mesmo tempo, proteger nossos ecossistemas não é uma escolha, é uma urgência. O verdadeiro progresso nasce da união entre a força tecnológica do agronegócio e a sabedoria essencial da agricultura familiar.</p>
+        </section>
+
+        <main class="grid-pilares">
+            <div class="card">
+                <div class="card-img img-agronegocio"></div>
+                <div class="card-content">
+                    <h2>Agronegócio & Alta Escala</h2>
+                    <p>Responsável pelo abastecimento global e pela balança comercial. Utiliza tecnologia de ponta, monitoramento via satélite e biotecnologia para produzir mais alimentos utilizando menos espaço, reduzindo a pressão sobre novas áreas de floresta.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img img-familiar"></div>
+                <div class="card-content">
+                    <h2>Agricultura Familiar & Base</h2>
+                    <p>A força que alimenta as mesas locais. Essencial para a diversidade cultural e a segurança alimentar das comunidades. Desempenha um papel crucial na conservação do solo e na manutenção de práticas tradicionais de manejo ecológico.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img img-sustentabilidade"></div>
+                <div class="card-content">
+                    <h2>O Caminho da Sustentabilidade</h2>
+                    <p>O ponto de encontro onde a produção encontra a preservação. Práticas como o plantio direto, rotação de culturas, sistemas ILPF (Integração Lavoura-Pecuária-Floresta) e o uso de bioinsumos guiam o futuro do campo.</p>
+                </div>
+            </div>
+        </main>
+
+        <section class="interativo">
+            <h2>Como alcançar o equilíbrio perfeito?</h2>
+            <p>Clique no botão abaixo para entender como a união desses setores constrói um futuro viável.</p>
+            <button class="btn" onclick="mostrarInsights()">Ver Diagnóstico do Futuro</button>
+            
+            <div id="mensagem-equilibrio">
+                <strong>💡 O Grande Impacto da União:</strong>
+                <p>Nenhum setor é autossuficiente sozinho. Enquanto o agronegócio traz a potência econômica e investimentos em tecnologias verdes escaláveis, a agricultura familiar garante a biodiversidade e o desenvolvimento social do interior. A sustentabilidade real acontece quando ambos adotam práticas de conservação, protegendo as águas e mitigando as mudanças climáticas.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Consciência no Campo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        /* --- LÓGICA DE INTERAÇÃO (JAVASCRIPT) --- */
+        function mostrarInsights() {
+            const painel = document.getElementById('mensagem-equilibrio');
+            
+            // Alterna a exibição do painel com um efeito simples
+            if (painel.style.display === 'none' || painel.style.display === '') {
+                painel.style.display = 'block';
+                // Rola a tela suavemente até o conteúdo revelado
+                painel.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                painel.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
